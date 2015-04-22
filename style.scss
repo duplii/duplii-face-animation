@@ -1,0 +1,48 @@
+/**************************************************/
+/******************* variables ********************/
+/**************************************************/
+
+$orange-logo: #FF5F19;
+$orange: #FF804D;
+$dark-orange: #FF6F35;
+$white: #FFFFFF;
+$off-white: #F9F9F9;
+$light-gray: #EDEBEA;
+$gray: #D1CDCB;
+$main: #938F8D;
+$dark-gray: #5A5655;
+$black: #322E2C;
+$blue: #49BBF0;
+
+/**************************************************/
+/***************** general styles *****************/
+/**************************************************/
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+body {
+	text-align: center;
+	font-family: "Gotham Rounded", Helvetica, sans-serif;
+	color: $main;
+	max-width: 700px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+a {
+	color: $orange;
+	text-decoration: none;
+}
+
+.logo {
+	width: 63px;
+}
+
+.animation-container {
+	margin: 70px auto 100px;
+}
+

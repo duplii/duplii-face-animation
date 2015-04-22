@@ -1,0 +1,200 @@
+/**************************************************/
+/*************** animation specific ***************/
+/**************************************************/
+.animation-container {
+  margin-top: 200px; }
+
+object {
+  width: 15px; }
+
+.duplii-faces-container object {
+  position: absolute; }
+
+@-webkit-keyframes duplii-pour-1 {
+  0% {
+    -webkit-transform: translate(-1px, 0px);
+            transform: translate(-1px, 0px);
+    opacity: 0; }
+  25% {
+    -webkit-transform: translate(1px, 12.5px) rotate(2deg);
+            transform: translate(1px, 12.5px) rotate(2deg);
+    opacity: 1; }
+  50% {
+    -webkit-transform: translate(-1px, 25px) rotate(-2deg);
+            transform: translate(-1px, 25px) rotate(-2deg);
+    opacity: 1; }
+  75% {
+    -webkit-transform: translate(1px, 37.5px) rotate(2deg);
+            transform: translate(1px, 37.5px) rotate(2deg);
+    opacity: 1; }
+  87% {
+    -webkit-transform: translate(-1px, 43.5px) rotate(-2deg);
+            transform: translate(-1px, 43.5px) rotate(-2deg);
+    opacity: 1; }
+  100% {
+    -webkit-transform: translate(1px, 50px);
+            transform: translate(1px, 50px);
+    opacity: 0; } }
+
+@keyframes duplii-pour-1 {
+  0% {
+    -webkit-transform: translate(-1px, 0px);
+            transform: translate(-1px, 0px);
+    opacity: 0; }
+
+  25% {
+    -webkit-transform: translate(1px, 12.5px) rotate(2deg);
+            transform: translate(1px, 12.5px) rotate(2deg);
+    opacity: 1; }
+
+  50% {
+    -webkit-transform: translate(-1px, 25px) rotate(-2deg);
+            transform: translate(-1px, 25px) rotate(-2deg);
+    opacity: 1; }
+
+  75% {
+    -webkit-transform: translate(1px, 37.5px) rotate(2deg);
+            transform: translate(1px, 37.5px) rotate(2deg);
+    opacity: 1; }
+
+  87% {
+    -webkit-transform: translate(-1px, 43.5px) rotate(-2deg);
+            transform: translate(-1px, 43.5px) rotate(-2deg);
+    opacity: 1; }
+
+  100% {
+    -webkit-transform: translate(1px, 50px);
+            transform: translate(1px, 50px);
+    opacity: 0; } }
+
+.duplii-pour-1 {
+  -webkit-animation: duplii-pour-1 2.5s linear;
+          animation: duplii-pour-1 2.5s linear;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both; }
+
+@-webkit-keyframes duplii-pour-2 {
+  0% {
+    -webkit-transform: translate(2px, 0px);
+            transform: translate(2px, 0px);
+    opacity: 0; }
+  25% {
+    -webkit-transform: translate(-2px, 25px) rotate(-4deg);
+            transform: translate(-2px, 25px) rotate(-4deg);
+    opacity: 1; }
+  50% {
+    -webkit-transform: translate(2px, 50px) rotate(4deg);
+            transform: translate(2px, 50px) rotate(4deg);
+    opacity: 1; }
+  75% {
+    -webkit-transform: translate(-2px, 75px) rotate(-4deg);
+            transform: translate(-2px, 75px) rotate(-4deg);
+    opacity: 1; }
+  83% {
+    -webkit-transform: translate(2px, 83px) rotate(4deg);
+            transform: translate(2px, 83px) rotate(4deg);
+    opacity: 1; }
+  100% {
+    -webkit-transform: translate(-2px, 100px);
+            transform: translate(-2px, 100px);
+    opacity: 0; } }
+
+@keyframes duplii-pour-2 {
+  0% {
+    -webkit-transform: translate(2px, 0px);
+            transform: translate(2px, 0px);
+    opacity: 0; }
+
+  25% {
+    -webkit-transform: translate(-2px, 25px) rotate(-4deg);
+            transform: translate(-2px, 25px) rotate(-4deg);
+    opacity: 1; }
+
+  50% {
+    -webkit-transform: translate(2px, 50px) rotate(4deg);
+            transform: translate(2px, 50px) rotate(4deg);
+    opacity: 1; }
+
+  75% {
+    -webkit-transform: translate(-2px, 75px) rotate(-4deg);
+            transform: translate(-2px, 75px) rotate(-4deg);
+    opacity: 1; }
+
+  83% {
+    -webkit-transform: translate(2px, 83px) rotate(4deg);
+            transform: translate(2px, 83px) rotate(4deg);
+    opacity: 1; }
+
+  100% {
+    -webkit-transform: translate(-2px, 100px);
+            transform: translate(-2px, 100px);
+    opacity: 0; } }
+
+.duplii-pour-2 {
+  -webkit-animation: duplii-pour-2 5s linear;
+          animation: duplii-pour-2 5s linear;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both; }
+
+@-webkit-keyframes duplii-pour-3 {
+  0% {
+    -webkit-transform: translate(-3px, 0px);
+            transform: translate(-3px, 0px);
+    opacity: 0; }
+  25% {
+    -webkit-transform: translate(3px, 37.5px) rotate(6deg);
+            transform: translate(3px, 37.5px) rotate(6deg);
+    opacity: 1; }
+  50% {
+    -webkit-transform: translate(-3px, 75px) rotate(-6deg);
+            transform: translate(-3px, 75px) rotate(-6deg);
+    opacity: 1; }
+  75% {
+    -webkit-transform: translate(3px, 112.5px) rotate(6deg);
+            transform: translate(3px, 112.5px) rotate(6deg);
+    opacity: 1; }
+  90% {
+    -webkit-transform: translate(-3px, 135px) rotate(-6deg);
+            transform: translate(-3px, 135px) rotate(-6deg);
+    opacity: 1; }
+  100% {
+    -webkit-transform: translate(3px, 150px);
+            transform: translate(3px, 150px);
+    opacity: 0; } }
+
+@keyframes duplii-pour-3 {
+  0% {
+    -webkit-transform: translate(-3px, 0px);
+            transform: translate(-3px, 0px);
+    opacity: 0; }
+
+  25% {
+    -webkit-transform: translate(3px, 37.5px) rotate(6deg);
+            transform: translate(3px, 37.5px) rotate(6deg);
+    opacity: 1; }
+
+  50% {
+    -webkit-transform: translate(-3px, 75px) rotate(-6deg);
+            transform: translate(-3px, 75px) rotate(-6deg);
+    opacity: 1; }
+
+  75% {
+    -webkit-transform: translate(3px, 112.5px) rotate(6deg);
+            transform: translate(3px, 112.5px) rotate(6deg);
+    opacity: 1; }
+
+  90% {
+    -webkit-transform: translate(-3px, 135px) rotate(-6deg);
+            transform: translate(-3px, 135px) rotate(-6deg);
+    opacity: 1; }
+
+  100% {
+    -webkit-transform: translate(3px, 150px);
+            transform: translate(3px, 150px);
+    opacity: 0; } }
+
+.duplii-pour-3 {
+  -webkit-animation: duplii-pour-3 7.5s linear;
+          animation: duplii-pour-3 7.5s linear;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both; }
