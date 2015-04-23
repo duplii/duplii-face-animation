@@ -1,3 +1,6 @@
+var svgNS = 'http://www.w3.org/2000/svg',
+	xlinkNS = 'http://www.w3.org/1999/xlink';
+
 function pourDupliis( where, rgbColor, svgUrl ) {
 	if ( pourDupliis.stopPouring ) {
 		return;
@@ -29,21 +32,33 @@ function pourDupliis( where, rgbColor, svgUrl ) {
 	// Decide what animation to apply.
 	animationId = getRandomInt(1,3);
 	// Create the thing.
-	face = document.createElement( 'object' );
-	face.setAttribute( 'type', 'image/svg+xml' );
-	face.setAttribute( 'data', svgUrl );
+	face = document.createElementNS( svgNS, 'svg' );
+//	face.setAttribute('xmlns', svgNS);
+//	face.setAttribute('xmlns:xlink', xlinkNS);
+	face.setAttributeNS(svgNS, 'viewBox', '0 0 31 31');
+	face.setAttributeNS(svgNS, 'preserveAspectRatio', 'xMinYMax meet');
+	where.appendChild( face );
+	useEl = document.createElementNS(svgNS, 'use');
+	useEl.setAttributeNS(xlinkNS, 'xlink:href', svgUrl);
+	useEl.setAttributeNS(svgNS, 'viewBox', '0 0 31 31');
+	face.appendChild(useEl);
+//	face.setAttribute( 'type', 'image/svg+xml' );
+//	face.setAttribute( 'data', svgUrl );
 	// Apply classes and styles.
 	face.classList.add('duplii-pour-'+ animationId);
 	face.style.cssText +=';'+ cssString;
+
+	
+	
 	
 
 	// Append it
-	where.appendChild( face );
-	face.addEventListener('load', function() {
-		svgDoc = face.contentDocument;
-		svgThing = svgDoc.getElementById('duplii-face');
-		svgThing.style.fill = 'rgba('+ color +')';
-	});
+//	where.appendChild( face );
+//	face.addEventListener('load', function() {
+//		svgDoc = face.contentDocument;
+//		svgThing = svgDoc.getElementById('duplii-face');
+//		svgThing.style.fill = 'rgba('+ color +')';
+//	});
 	
 	// We need to calculate how much time will the animation last (delay + duration). The duration needs to be in milliseconds, hence the * 1000.
 	function getAnimationDuration( el ) {
