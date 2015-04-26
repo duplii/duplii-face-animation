@@ -12,7 +12,7 @@ I am also including the `config.codekit` file so that everyone using Codekit wil
 
 A live demo of this project can be found at [here](http://duplii.github.io/duplii-face-animation/ "Duplii | We Make Duplication Happen").
 
-<img src="http://duplii.github.io/duplii-face-animation/screenshot.png" width="856" height="347" alt="Duplii | Face Animation Preview" />
+<img src="http://duplii.github.io/duplii-face-animation/public/screenshot.png" width="856" height="347" alt="Duplii | Face Animation Preview" />
 
 ## MIT License
 
