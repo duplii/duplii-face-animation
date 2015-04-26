@@ -2,25 +2,17 @@
 /*************** animation specific ***************/
 /**************************************************/
 
-body {
-	
-}
 .animation-container {
-	margin-top: 200px;
+	margin-top: 300px;
 }
 
-object {
-	width: 15px;
-}
-
-.duplii-faces-container object {
+.duplii-faces-container span {
+	display: block;
 	position: absolute;
 }
 
-// The animation needs to be tweaked: fade in (without scale-in) > move up (with sway) > fade out (without scale-up). This should make for an lighter animation overall, but we need more little things animating and they are also svgs, so it might be taxing on the system anyways. Needs to be checked.
-
 @function calculate-distance($anim-step, $length){
-	// We need to calculate the exact distance a bubble should be at every given keyframe
+	// We need to calculate the exact distance a face should be at every given keyframe
 	// $anim-step : 100 = x : $length
 	@return $anim-step * $length / 100;
 }
@@ -38,12 +30,12 @@ object {
 		@for $i from 1 through $steps-length {
 			$this-step: nth($steps, $i);
 			$distance: calculate-distance($this-step, $length);
-			// This is the sway factor. By multiplying it by -1 on each loop execution we are able to sway the bubble from left to right.
+			// This is the sway factor. By multiplying it by -1 on each loop execution we are able to sway the face from left to right.
 			$sway: $sway * -1;
 			$rotation: 2 * $sway;
 			@if $i == 1 {
 				#{$this-step}% { transform: translate(#{$sway}px, #{$distance}); opacity: 0; }
-			} @else if $steps-length - $i >= 1 { // The bubble is just moving up
+			} @else if $steps-length - $i >= 1 { // The thing is just moving up
 				#{$this-step}% { transform: translate(#{$sway}px, #{$distance}) rotate(#{$rotation}deg); opacity: 1; }
 			} @else { // Last keyframe: burst the thing!
 				#{$this-step}% { transform: translate(#{$sway}px, #{$distance}); opacity: 0; }

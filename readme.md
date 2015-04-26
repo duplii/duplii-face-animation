@@ -1,14 +1,18 @@
-# Duplii testing template
+# Duplii Face Animation
 
-This is the template we'll use for quickly prototyping animations and special effects.
+This animation will be used on the public website and it basically makes duplii faces pour down, like rain or snow. It is based on the world-famous™ [Duplii Bubble Animation](https://github.com/duplii/duplii-bubble).
+
+This final version creates a span tag that contains an img tag. This is so I can set the img opacity separately from the animatated span opacity. Unfortunately, this means that this version does not allow to set the color dinamically, because it can't be done when using img tag.
+
+I am also including two different branches that use the `object` tag and `<use xlink:href>`. Both presented issues that lead me to abandon them. The `object` version created huge performance issues, probably related to memory leaks in some extensions like LastPass. The `use` version, instead, had issue with viewbox. It basically didn't size svgs correctly.
 
 I am also including the `config.codekit` file so that everyone using Codekit will be able to get started immediately.
 
 ## Live demo
 
-A live demo of this project can be found at [Insert Link Here](http://duplii.com/ "Duplii | We Make Duplication Happen").
+A live demo of this project can be found at [here](http://duplii.github.io/duplii-bubble/ "Duplii | We Make Duplication Happen").
 
-Include an optional image to preview the project.
+<img src="http://duplii.github.io/duplii-bubble/screenshot.png" width="856" height="347" alt="Duplii | Face Animation Preview" />
 
 ## MIT License
 
