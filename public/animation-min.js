@@ -10,8 +10,8 @@ function pourDupliis( where, svgUrl ) {
 	// Define all variables.
 	var faceCont, face, faceWidth, faceOpacity, cssString, animationId, posX, posY, animDelay;
 	// Define the diameter of the face.
-	faceWidth = getRandomInt(10, 40);
-	faceOpacity = getRandomInt(2, 6) / 10;
+	faceWidth = getRandomInt(10, 75);
+	faceOpacity = getRandomInt(1, 4) / 10;
 	// Define the position bottom and left.
 	posX = getRandomInt(0, 100);
 	posY = getRandomInt(0, 30);

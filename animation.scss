@@ -6,7 +6,7 @@
 	margin-top: 300px;
 }
 
-.duplii-faces-container span {
+.duplii-faces-container > span {
 	display: block;
 	position: absolute;
 }
@@ -48,19 +48,19 @@
 $configs: (
 	(
 		name: duplii-pour-1,
-		length: 50px,
+		length: 150px,
 		steps: 0 25 50 75 87 100,
 		sway: 1
 	),
 	(
 		name: duplii-pour-2,
-		length: 100px,
+		length: 200px,
 		steps: 0 25 50 75 83 100,
 		sway: -2
 	),
 	(
 		name: duplii-pour-3,
-		length: 150px,
+		length: 250px,
 		steps: 0 25 50 75 90 100,
 		sway: 3
 	)
@@ -70,8 +70,8 @@ $configs: (
 @for $i from 1 through length($configs) {
 	@include generate-keyframe( nth($configs, $i) );
 	.duplii-pour-#{$i} {
-		animation: duplii-pour-#{$i} #{$i * 2.5}s linear;
+		$duration-factor: $i * 3;
+		animation: duplii-pour-#{$i} #{$duration-factor * 2.5}s linear;
 		animation-fill-mode: both;
 	}
 }
- 
