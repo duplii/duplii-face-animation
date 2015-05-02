@@ -1,10 +1,12 @@
 # Duplii Face Animation
 
-This animation will be used on the public website and it basically makes duplii faces pour down, like rain or snow. It is based on the world-famous™ [Duplii Bubble Animation](https://github.com/duplii/duplii-bubble).
+This animation will be used on the public website and it basically makes duplii faces pour down, like rain or snow. It also creates a slight parallax effect with bigger and darker faces moving more quickly than smaller and more transparent ones. Sweet as it gets.
+
+It is based on the world-famous [Duplii Bubble Animation™](https://github.com/duplii/duplii-bubble).
 
 This final version creates a span tag that contains an img tag. This is so I can set the img opacity separately from the animatated span opacity. Unfortunately, this means that this version does not allow to set the color dinamically, because it can't be done when using img tag.
 
-I am also including two different branches that use the `object` tag and `<use xlink:href>`. Both presented issues that lead me to abandon them. The `object` version created huge performance issues, probably related to memory leaks in some extensions like LastPass. The `use` version, instead, had issue with viewbox. It basically didn't size svgs correctly.
+I am also including two different branches that use the `object` tag and `<use xlink:href>`. Both presented issues that lead me to abandon them. The `object` version created huge performance issues, probably related to memory leaks in some extensions like LastPass. The `use` version, instead, had issues with viewbox. It basically didn't size svgs correctly.
 
 I am also including the `config.codekit` file so that everyone using Codekit will be able to get started immediately.
 

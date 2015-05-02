@@ -61,8 +61,8 @@
     opacity: 0; } }
 
 .duplii-pour-1 {
-  -webkit-animation: duplii-pour-1 7.5s linear;
-          animation: duplii-pour-1 7.5s linear;
+  -webkit-animation: duplii-pour-1 6s linear;
+          animation: duplii-pour-1 6s linear;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both; }
 
@@ -119,8 +119,8 @@
     opacity: 0; } }
 
 .duplii-pour-2 {
-  -webkit-animation: duplii-pour-2 15s linear;
-          animation: duplii-pour-2 15s linear;
+  -webkit-animation: duplii-pour-2 12s linear;
+          animation: duplii-pour-2 12s linear;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both; }
 
@@ -177,7 +177,7 @@
     opacity: 0; } }
 
 .duplii-pour-3 {
-  -webkit-animation: duplii-pour-3 22.5s linear;
-          animation: duplii-pour-3 22.5s linear;
+  -webkit-animation: duplii-pour-3 18s linear;
+          animation: duplii-pour-3 18s linear;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both; }

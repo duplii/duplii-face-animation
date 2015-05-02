@@ -8,10 +8,32 @@ function pourDupliis( where, svgUrl ) {
 	    return Math.floor( Math.random() * (max - min + 1) ) + min;
 	}
 	// Define all variables.
-	var faceCont, face, faceWidth, faceOpacity, cssString, animationId, posX, posY, animDelay;
+	var animationId, minWidth, maxWidth, minOpacity, maxOpacity, faceWidth, faceOpacity, cssString, posX, posY, animDelay, faceCont, face;
+	// Decide what animation to apply.
+	animationId = getRandomInt(1,3);
+	switch ( animationId ) {
+		case 1:
+			minWidth = 60;
+			maxWidth = 80;
+			minOpacity = 35;
+			maxOpacity = 45;
+			break;
+		case 2:
+			minWidth = 30;
+			maxWidth = 50;
+			minOpacity = 25;
+			maxOpacity = 33;
+			break;
+		case 3:
+			minWidth = 10;
+			maxWidth = 25;
+			minOpacity = 10;
+			maxOpacity = 25;
+			break;
+	}
 	// Define the diameter of the face.
-	faceWidth = getRandomInt(10, 75);
-	faceOpacity = getRandomInt(1, 4) / 10;
+	faceWidth = getRandomInt(minWidth, maxWidth);
+	faceOpacity = getRandomInt(minOpacity, maxOpacity) / 100;
 	// Define the position bottom and left.
 	posX = getRandomInt(0, 100);
 	posY = getRandomInt(0, 30);
@@ -22,8 +44,6 @@ function pourDupliis( where, svgUrl ) {
 		'left:'+ posX +'%;' +
 		'-webkit-animation-delay:'+ animDelay +'ms;' +
 		'animation-delay:'+ animDelay +'ms;';
-	// Decide what animation to apply.
-	animationId = getRandomInt(1,3);
 	// Create the thing.
 	faceCont = document.createElement( 'span' );
 	face = document.createElement( 'img' );

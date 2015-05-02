@@ -70,8 +70,8 @@ $configs: (
 @for $i from 1 through length($configs) {
 	@include generate-keyframe( nth($configs, $i) );
 	.duplii-pour-#{$i} {
-		$duration-factor: $i * 3;
-		animation: duplii-pour-#{$i} #{$duration-factor * 2.5}s linear;
+		$duration-factor: $i * 4;
+		animation: duplii-pour-#{$i} #{$duration-factor * 1.5}s linear;
 		animation-fill-mode: both;
 	}
 }

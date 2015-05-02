@@ -4,7 +4,9 @@
 /**************************************************/
 /***************** general styles *****************/
 /**************************************************/
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: border-box; }
 
 body {
@@ -24,3 +26,7 @@ a {
 
 .animation-container {
   margin: 70px auto 100px; }
+
+small {
+  position: relative;
+  z-index: 2; }
